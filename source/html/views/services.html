@@ -1,0 +1,27 @@
+<!--header.html-->
+<%= _.template(require('../includes/common/header.html').default)({}) %>
+
+<style>
+  .section-content-image .col-lg-6:nth-of-type(2) {
+    order: -1;
+  }
+  .callback-section {
+    margin-bottom: 180px;
+  }
+</style>
+
+<%= _.template(require('../includes/breadcrumbs.html').default)({}) %>
+
+
+<%= _.template(require('../includes/services-block.html').default)({}) %>
+
+<%= _.template(require('../includes/block-image.html').default)({}) %>
+
+<%= _.template(require('../includes/faq.html').default)({}) %>
+
+<%= _.template(require('../includes/callback.html').default)({}) %>
+
+<%= _.template(require('../includes/testimonials-slider.html').default)({}) %>
+
+<!--footer.html-->
+<%= _.template(require('../includes/common/footer.html').default)({}) %>

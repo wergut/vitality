@@ -1,0 +1,64 @@
+<!--header.html-->
+<%= _.template(require('../includes/common/header.html').default)({}) %>
+
+<%= _.template(require('../includes/breadcrumbs.html').default)({}) %>
+
+<section class="location-section">
+  <div class="container">
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="iframe-wrapper">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3262.9985150021903!2d-106.52369809999999!3d35.1317106!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87189fe582f9fff3%3A0xa67ca4e8e465338a!2s10409%20Montgomery%20Pkwy%20NE%20%23202g%2C%20Albuquerque%2C%20NM%2087111%2C%20%D0%A1%D0%A8%D0%90!5e0!3m2!1sru!2sru!4v1707414133927!5m2!1sru!2sru" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="location-info">
+            <div class="h2">Adamsville, AL</div>
+            <div class="location-contacts">
+              <div class="contact-text contact-address">10409 Montgomery Pkwy NE, Ste 202G, Albuquerque, NM 87111</div>
+              <a href="#" class="contact-text contact-phone">1 500 956 1236</a>
+              <div class="contact-text contact-time">Monday-Thursday 10am –13pm</div>
+              <a href="#" class="contact-text contact-mail">mail@site.com</a>
+            </div>
+            <a href="#" class="btn btn-blue">Make a appointment</a>
+          </div>
+        </div>
+      </div>
+  </div>
+</section>
+
+<%= _.template(require('../includes/treatments.html').default)({}) %>
+
+<section class="single-location-content">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-7">
+        <div class="section-article">
+          <div class="section-article-content">
+            <h3>What Are Normal Testosterone Levels in Men by Age?</h3>
+            <p>
+              Although testosterone levels can greatly differ depending on the individual, there is a recognized standard for what is considered an “average” testosterone level for men. Typically, the normal testosterone levels in males range from 300 to 1,000 nanograms per deciliter (ng/dl), or 10 to 35 nanomoles per liter by the time they reach adulthood.
+            </p>
+            <p>
+              A s boys grow and become men, their testosterone levels usually change at each stage of growth and development, reinforcing their physical and sexual characteristics during each transition. However, most men do not share the same experiences during these transitions, and in some cases, their testosterone levels can be either higher or lower than the average male in their age range.
+            </p>
+            <h5>Children</h5>
+            <p>Typically, male children between the ages of 6 months and nine years have a range between 7 and 20 ng/dl of testosterone. However, by the time they reach 11 years old, the high end of that range can increase to 130 ng/dl, and as they speed towards their teenage years, that number rises to 800 ng/do by the time they reach the ages of 12 and 13.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-5">
+        <div class="block-image">
+          <img src="./img/location-image-block.png" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<%= _.template(require('../includes/testimonials-slider.html').default)({}) %>
+
+<%= _.template(require('../includes/callback.html').default)({}) %>
+
+<!--footer.html-->
+<%= _.template(require('../includes/common/footer.html').default)({}) %>

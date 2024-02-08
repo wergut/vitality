@@ -1,0 +1,55 @@
+<!--header.html-->
+<%= _.template(require('../includes/common/header.html').default)({}) %>
+
+<section class="main-banner">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-7">
+        <div class="banner-title-block">
+          <h1 class="h1">Feel Stronger, Live Better</h1>
+          <div class="banner-description">
+            <p>Boost Your Testosterone, Boost Your Life!</p>
+          </div>
+          <a class="btn btn-blue" href="#">Contact Now</a>
+        </div>
+      </div>
+      <div class="col-lg-5">
+        <div class="banner-right-content">
+          <div class="review-card">
+            <div class="review-card-title">
+              <span>David Brown</span>
+              <div class="review-card-rating">
+                <i class="star"></i>
+                <i class="star"></i>
+                <i class="star"></i>
+                <i class="star"></i>
+                <i class="star"></i>
+              </div>
+            </div>
+            <div class="review-card-description">
+              <p>Vital Clinic's therapy has been a miraculous experience, not only in terms of muscle growth but also in the renewed vigor I feel every day, enhancing my overall quality of life.</p>
+            </div>
+          </div>
+          <div class="banner-image">
+            <img src="./img/banner-img.png" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<%= _.template(require('../includes/symptoms.html').default)({}) %>
+
+<%= _.template(require('../includes/block-image.html').default)({}) %>
+
+<%= _.template(require('../includes/how-work.html').default)({}) %>
+
+<%= _.template(require('../includes/treatments.html').default)({}) %>
+
+<%= _.template(require('../includes/testimonials-slider.html').default)({}) %>
+
+<%= _.template(require('../includes/callback.html').default)({}) %>
+
+<!--footer.html-->
+<%= _.template(require('../includes/common/footer.html').default)({}) %>

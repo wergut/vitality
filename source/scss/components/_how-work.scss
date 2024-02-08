@@ -1,0 +1,42 @@
+.how-work {
+
+  .title-block {
+    text-align: center;
+  }
+
+  .work-item {
+    border: 1px solid #f3f3f3;
+    border-radius: 20px;
+    box-shadow: 1px 2px 6px 0 rgba(148, 175, 182, 0.21);
+    height: 490px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+
+    .work-ico {
+      margin-bottom: 45px;
+      padding: 50px 40px 0;
+
+      img {
+        width: 100px;
+        height: 100px;
+        object-fit: contain;
+      }
+    }
+
+    .h5 {
+      margin-bottom: 12px;
+      height: 58px;
+      padding: 0 23px 0 40px;
+    }
+    .work-description {
+      padding: 0 40px;
+    }
+    .btn {
+      max-width: calc(100% - 80px);
+      margin: 0 auto 50px;
+    }
+  }
+
+}

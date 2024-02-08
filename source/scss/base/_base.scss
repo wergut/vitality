@@ -1,0 +1,248 @@
+body::-webkit-scrollbar {
+  width: 4px;
+}
+
+body::-webkit-scrollbar-track {
+
+}
+
+body::-webkit-scrollbar-thumb {
+  border-radius: 20px;
+}
+
+section {
+  margin: 180px 0;
+}
+
+
+table {
+  width: 100%;
+  border-spacing: 0;
+
+  tr {
+
+    &:first-of-type {
+      background-color: $--color-blue-white;
+
+      td {
+        font-size: 15px;
+        font-weight: 600;
+        line-height: 18px;
+        letter-spacing: 0.0125em;
+        border-bottom: none;
+        padding: 11px 0;
+
+        span {
+          color: $--color-grey;
+          font-size: 12px;
+          letter-spacing: 0.03em;
+          font-weight: 400;
+        }
+      }
+    }
+    &:last-of-type {
+
+      td {
+        border-bottom: none;
+      }
+    }
+  }
+
+  td {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    padding: 8px 0;
+    border-bottom: 1px solid $--color-border-grey;
+  }
+
+}
+
+.title-block {
+  width: 100%;
+}
+
+.grid-six-items {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-between;
+
+  .grid-item {
+    width: 15%;
+    padding: 0 15px;
+  }
+}
+
+.review-card {
+  border: 1px solid #f3f3f3;
+  border-radius: 20px;
+  box-shadow: 1px 2px 6px 0 rgba(148, 175, 182, 0.21);
+  background: $--color-white;
+  padding: 37px 25px 34px;
+
+  .review-card-rating {
+    display: flex;
+    align-items: center;
+
+    .star {
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+      background-image: url(../img/icons/star.svg);
+      width: 16px;
+      height: 16px;
+      display: block;
+    }
+  }
+
+  .review-card-title {
+    margin-bottom: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+
+    span {
+      font-weight: 600;
+      font-size: 15px;
+      letter-spacing: 0.01em;
+      color: $--color-blue;
+    }
+  }
+
+  .review-card-description {
+
+    p {
+      color: $--color-default;
+    }
+  }
+}
+
+.service-card {
+  border: 1px solid #f3f3f3;
+  border-radius: 20px;
+  padding: 40px 30px;
+  box-shadow: 1px 2px 6px 0 rgba(148, 175, 182, 0.21);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 315px;
+  .card-content {
+
+    .card-title {
+      font-weight: 500;
+      font-size: 25px;
+      margin-bottom: 20px;
+      color: $--color-blue;
+    }
+    .card-description {
+
+      p {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -moz-box;
+        display: -webkit-box;
+        -webkit-line-clamp: 7;
+        -webkit-box-orient: vertical;
+        line-clamp: 7;
+        box-orient: vertical;
+      }
+    }
+  }
+}
+
+.blog-card {
+  border: 1px solid #f3f3f3;
+  border-radius: 20px;
+  padding: 30px 25px;
+  box-shadow: 1px 2px 6px 0 rgba(148, 175, 182, 0.21);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 444px;
+  margin-bottom: 30px;
+
+  .card-image {
+    margin-bottom: 20px;
+
+    img {
+      height: 140px;
+      width: 100%;
+      border-radius: 10px;
+    }
+  }
+
+  .h5 {
+    font-weight: 500;
+    font-size: 24px;
+    height: 50px;
+  }
+
+  .card-description {
+    margin-bottom: 20px;
+
+    p {
+      color: $--color-default;
+    }
+  }
+}
+
+.contact-text {
+  display: flex;
+  align-items: center;
+  font-weight: 400;
+  font-size: 16px;
+  color: $--color-default;
+
+  &:not(:last-child) {
+    margin-bottom: 10px;
+  }
+
+  &:before {
+    content: "";
+    display: block;
+    width: 16px;
+    height: 16px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    margin-right: 10px;
+  }
+
+}
+
+a.contact-text:hover {
+  color: $--color-blue;
+}
+
+.contact-time {
+
+  &:before {
+    background-image: url(../img/icons/clock.svg);
+  }
+}
+
+.contact-phone {
+  &:before {
+    background-image: url(../img/icons/phone_enabled.svg);
+  }
+}
+
+.contact-mail {
+  &:before {
+    background-image: url(../img/icons/email.svg);
+  }
+}
+
+.contact-fax {
+  &:before {
+    background-image: url(../img/icons/fax-ico.svg);
+  }
+}
+
+.contact-address {
+  &:before {
+    background-image: url(../img/icons/address-ico.svg);
+  }
+}

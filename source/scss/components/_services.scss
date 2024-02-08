@@ -1,0 +1,20 @@
+.services {
+
+  .service-card {
+    margin-bottom: 30px;
+  }
+
+  .service-card-last {
+    background: $--color-blue-light;
+
+    .card-title {
+      color: $--color-white;
+    }
+    .card-description {
+
+      p {
+        color: $--color-white;
+      }
+    }
+  }
+}

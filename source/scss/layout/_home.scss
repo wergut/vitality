@@ -1,0 +1,50 @@
+.main-banner {
+  margin: 0 0 150px;
+
+  .banner-right-content {
+    position: relative;
+  }
+
+  .banner-title-block {
+    padding-top: 160px;
+
+    .banner-description {
+
+      margin-bottom: 57px;
+    }
+  }
+  .review-card {
+    position: absolute;
+    max-width: 400px;
+    width: 100%;
+    top: 55%;
+    z-index: 1;
+    left: -25%;
+  }
+  .banner-image {
+    border-radius: 283px;
+    position: relative;
+    right: -15%;
+
+    &:before {
+      content: "";
+      display: block;
+      background: $--color-blue-white;
+      position: absolute;
+      border-radius: 283px;
+      left: 0;
+      top: -53%;
+      height: 1017px;
+      width: 100%;
+      z-index: -1;
+    }
+
+    img {
+      border-radius: 283px;
+      height: 666px;
+      object-fit: cover;
+    }
+  }
+}
+
+

@@ -1,0 +1,45 @@
+.treatments-section {
+  padding: 70px 0 20px;
+  background-repeat: no-repeat;
+  background-position: 40% 0%;
+  background-size: 120%;
+  background-image: url(../img/treatments-back.png);
+
+  .title-block {
+    .h3 {
+      margin-bottom: 30px;
+    }
+  }
+
+  .treatment-block {
+    margin-bottom: 50px;
+
+    .h5 {
+      color: $--color-blue;
+    }
+
+    .treatment-description {
+
+      p {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -moz-box;
+        -moz-box-orient: vertical;
+        display: -webkit-box;
+        -webkit-line-clamp: 7;
+        -webkit-box-orient: vertical;
+        line-clamp: 7;
+        box-orient: vertical;
+      }
+    }
+  }
+
+  .row {
+    margin: 0 -45px;
+    width: calc(100% + 90px);
+
+    [class*=col-] {
+      padding: 0 45px;
+    }
+  }
+}

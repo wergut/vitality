@@ -1,0 +1,117 @@
+.footer {
+  background-color: $--color-default;
+  padding: 44px 0 29px;
+
+  .footer-col {
+    padding: 0 15px;
+  }
+
+  .footer-col-left {
+    width: 17%;
+  }
+
+  .footer-col-center {
+    width: 48%;
+  }
+
+  .footer-col-right {
+    width: 35%;
+  }
+
+  a {
+    font-weight: 500;
+    line-height: 20px;
+    color: $--color-white;
+
+    &:hover {
+      color: $--color-blue;
+    }
+  }
+
+  .footer-logo {
+
+    img {
+      max-width: 170px;
+      width: 100%;
+      object-fit: contain;
+    }
+  }
+
+
+  .links-container {
+    display: flex;
+    justify-content: space-between;
+
+    .time-works {
+      width: 50%;
+      &:before {
+        content: "";
+        display: inline-flex;
+        background-repeat: no-repeat;
+        background-position: 0 0;
+        background-size: contain;
+        width: 18px;
+        height: 100%;
+        float: left;
+        margin-right: 10px;
+        background-image: url(../img/icons/clock.svg);
+        min-width: 18px;
+        align-items: flex-start;
+      }
+      p {
+        font-weight: 500;
+        line-height: 20px;
+        color: $--color-white;
+        &:not(:last-of-type) {
+          margin-bottom: 20px;
+        }
+      }
+    }
+
+    .links-contacts {
+      width: 50%;
+      a {
+        display: flex;
+        align-items: center;
+
+        &:before {
+          content: "";
+          display: block;
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: contain;
+          width: 18px;
+          height: 18px;
+          min-width: 18px;
+          margin-right: 10px;
+        }
+      }
+      .footer-phone {
+        margin-bottom: 20px;
+        &:before {
+          background-image: url(../img/icons/phone_enabled.svg);
+        }
+      }
+      .footer-mail {
+
+        &:before {
+          background-image: url(../img/icons/email.svg);
+        }
+      }
+    }
+  }
+
+  .footer-bottom {
+    margin-top: 30px;
+  }
+
+  .footer-copy, .footer-policy, .footer-policy a {
+    font-size: 12px;
+    letter-spacing: 0.03em;
+    color: $--color-grey;
+    text-transform: uppercase;
+  }
+  .footer-policy a:hover {
+    color: $--color-blue;
+  }
+}

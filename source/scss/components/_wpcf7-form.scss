@@ -1,0 +1,67 @@
+.wpcf7 {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  br {
+    display: none;
+  }
+
+  p {
+    display: inline-flex;
+    width: 100%;
+    max-width: calc(50% - 15px);
+    margin-bottom: 20px;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 15px;
+    letter-spacing: 0.4000000059604645px;
+
+
+  }
+
+  .form-description {
+    max-width: 40%;
+  }
+
+  label {
+    width: 100%;
+  }
+
+  input {
+    border: 1px solid $--color-blue;
+    border-radius: 500px;
+    height: 50px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    color: $--color-blue;
+    padding: 0 20px;
+    width: 100%;
+    background: transparent;
+
+    &::placeholder {
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 20px;
+      color: $--color-blue;
+    }
+  }
+  input[type="submit"] {
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 18px;
+    letter-spacing: 0.0125em;
+    color: $--color-white;
+    background: $--color-blue-light;
+    cursor: pointer;
+    padding: 0;
+    border: none;
+    text-align: center;
+    transition: 0.3s;
+
+    &:hover {
+      background: $--color-blue;
+    }
+  }
+}

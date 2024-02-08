@@ -1,0 +1,72 @@
+button {
+  cursor: pointer;
+}
+
+.btn {
+  max-width: 271px;
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 18px;
+  letter-spacing: 0.0125em;
+  border-radius: 50px;
+  transition: 0.3s;
+}
+
+.btn-blue {
+  background: $--color-blue-light;
+  color: $--color-white;
+
+  &:hover {
+    background: $--color-blue;
+  }
+}
+
+.swiper-button-next, .swiper-button-prev {
+  border-radius: 100%;
+  stroke-width: 1px;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $--color-blue-light;
+  transition: 0.3s;
+
+  svg {
+    width: 13px;
+    height: 20px;
+
+    path {
+      fill: $--color-white;
+    }
+  }
+
+  &:hover {
+      background-color: $--color-blue;
+  }
+}
+
+.swiper-button-next {
+
+  svg {
+    transform: rotate(180deg);
+  }
+}
+
+
+.swiper-button-disabled {
+  background-color: transparent;
+  border: 1px solid #c3c6c7;
+
+  svg {
+
+    path {
+      fill: #656d6f;
+    }
+  }
+}

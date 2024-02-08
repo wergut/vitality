@@ -1,0 +1,38 @@
+.contacts {
+  margin-top: 85px;
+
+  .contact-item {
+    padding: 40px;
+    background: $--color-blue-white;
+    border-radius: 20px;
+
+    &:not(:last-of-type) {
+      margin-bottom: 30px;
+    }
+
+    .h5 {
+      margin-bottom: 25px;
+    }
+  }
+
+  .contact-item-form {
+    padding: 50px 40px 30px;
+
+    .h2 {
+      max-width: 90%;
+    }
+  }
+
+  .contacts-description {
+    margin-top: 60px;
+
+    p:not(:last-of-type) {
+      margin-bottom: 20px;
+    }
+  }
+
+  .form-description {
+    margin-bottom: 34px;
+  }
+
+}

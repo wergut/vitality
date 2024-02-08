@@ -1,0 +1,20 @@
+.callback-section {
+  background-color: $--color-blue-white;
+  margin-bottom: 0;
+  padding: 58px 0 34px;
+
+  .h2 {
+    max-width: 80%;
+  }
+
+  .callback-description {
+
+    p {
+
+      &:not(:last-of-type) {
+        margin-bottom: 20px;
+      }
+    }
+  }
+
+}
