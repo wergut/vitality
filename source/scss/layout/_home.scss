@@ -1,6 +1,10 @@
 .main-banner {
   margin: 0 0 150px;
 
+  .h1 {
+    margin-bottom: 10px;
+  }
+
   .banner-right-content {
     position: relative;
   }
@@ -9,9 +13,15 @@
     padding-top: 160px;
 
     .banner-description {
-
       margin-bottom: 57px;
+
+      p {
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 29px;
+      }
     }
+
   }
   .review-card {
     position: absolute;
@@ -47,4 +57,55 @@
   }
 }
 
+@media (max-width: 1023px) {
+  .main-banner {
+    overflow: hidden;
 
+    .h1 {
+      margin-bottom: 20px;
+    }
+
+    .review-card {
+      left: -36%;
+      top: 55%;
+    }
+
+    .banner-title-block {
+      .banner-description {
+        margin-bottom: 40px;
+
+        p {
+          max-width: 80%;
+        }
+      }
+    }
+
+    .banner-right-content {
+      position: relative;
+    }
+
+    .banner-image {
+      position: initial;
+      margin-top: 30px;
+
+      &:before {
+        height: 626px;
+        width: 714px;
+        border-radius: 283px 0 0 283px;
+        top: -30px;
+        left: -15%;
+      }
+
+      img {
+        height: 582px;
+        border-radius: 0 0 0 245px;
+        width: 516px;
+        max-width: 516px;
+        position: relative;
+        left: -80px;
+        object-position: 10px 25px;
+      }
+    }
+
+  }
+}

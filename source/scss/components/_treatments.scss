@@ -43,3 +43,16 @@
     }
   }
 }
+
+@media (max-width: 1023px) {
+  .treatments-section {
+    padding: 60px 0 10px;
+    background-position: -20% 10%;
+    background-size: 105%;
+    background-image: url(../img/treatments-tablet-back.png);
+
+    .link-blue {
+      font-size: 15px;
+    }
+  }
+}

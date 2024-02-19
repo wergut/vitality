@@ -14,3 +14,14 @@
     }
   }
 }
+
+@media (max-width: 1023px) {
+  .section-content-image {
+
+    .content-image {
+      img {
+          height: 482px;
+      }
+    }
+  }
+}

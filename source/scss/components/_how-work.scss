@@ -40,3 +40,40 @@
   }
 
 }
+
+
+@media (max-width: 1023px) {
+  .how-work {
+
+    .work-item {
+      height: initial;
+      margin-bottom: 24px;
+
+      .h5 {
+        padding: 0;
+        height: initial;
+        margin-bottom: 15px;
+      }
+
+      .work-description {
+        padding: 0;
+      }
+
+      .work-content {
+        padding: 50px 40px 0;
+      }
+
+      .work-ico {
+        float: left;
+        padding: 0;
+        margin-right: 20px;
+        margin-bottom: 0;
+      }
+
+      .btn {
+        margin: 30px 0 50px 160px;
+        max-width: 290px;
+      }
+    }
+  }
+}

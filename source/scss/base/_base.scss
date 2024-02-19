@@ -94,6 +94,10 @@ table {
       height: 16px;
       display: block;
     }
+
+    .star + .star {
+      margin-left: 5px;
+    }
   }
 
   .review-card-title {
@@ -245,4 +249,34 @@ a.contact-text:hover {
   &:before {
     background-image: url(../img/icons/address-ico.svg);
   }
+}
+
+
+@media (max-width: 1023px) {
+
+  section {
+    margin: 150px 0;
+  }
+
+  .grid-six-items {
+    display: flex;
+    gap: 0;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+
+    .grid-item {
+      width: 25%;
+      margin-bottom: 45px;
+    }
+  }
+
+  .review-card {
+    padding: 35px 25px;
+
+    .review-card-title {
+      margin-bottom: 15px;
+    }
+  }
+
 }

@@ -81,10 +81,17 @@ a {
 p {
   color: $--color-grey;
   font-size: 16px;
-  line-height: 20px;
+  line-height: 19px;
 }
 
 ul {
   list-style: none;
   padding-left: 0;
+}
+
+
+@media (max-width: 1023px) {
+  h1, .h1 {
+    font-size: 50px;
+  }
 }

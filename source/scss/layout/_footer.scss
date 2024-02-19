@@ -103,6 +103,7 @@
 
   .footer-bottom {
     margin-top: 30px;
+    width: 100%;
   }
 
   .footer-copy, .footer-policy, .footer-policy a {
@@ -113,5 +114,41 @@
   }
   .footer-policy a:hover {
     color: $--color-blue;
+  }
+}
+
+@media (max-width: 1023px) {
+  .footer {
+
+    .footer-col-left {
+      width: 25%;
+    }
+    .footer-col-center {
+
+    }
+    .footer-col-right {
+      width: 25%;
+    }
+    .links-container {
+      flex-wrap: wrap;
+
+      .time-works {
+        width: 100%;
+        order: 1;
+        margin-top: 20px;
+        p:not(:last-of-type) {
+          margin-bottom: 5px;
+        }
+      }
+      .links-contacts {
+        width: 100%;
+      }
+    }
+    .footer-bottom {
+      margin-top: 15px;
+    }
+    .footer-policy {
+      order: -1;
+    }
   }
 }

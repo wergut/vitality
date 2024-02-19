@@ -70,3 +70,38 @@
   }
 
 }
+
+
+@media (max-width: 1023px) {
+  .testimonials-section {
+    position: relative;
+    padding-bottom: 70px;
+    margin-bottom: 80px;
+
+    .container {
+      position: relative;
+    }
+
+    .title-block {
+      position: initial;
+    }
+
+    &:after {
+      width: 6%;
+      bottom: 19%;
+    }
+
+    .swiper-button-next, .swiper-button-prev {
+      top: unset;
+      bottom: -70px;
+    }
+
+    .swiper-button-next {
+      right: 42px;
+    }
+
+    .swiper-button-prev {
+      left: 42px;
+    }
+  }
+}

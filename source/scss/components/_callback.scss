@@ -18,3 +18,22 @@
   }
 
 }
+
+
+@media (max-width: 1023px) {
+  .callback-section {
+    padding: 50px 0 43px;
+
+    .callback-description {
+      margin-bottom: 37px;
+
+      p {
+        display: inline;
+      }
+    }
+
+    .h2 {
+      max-width: 100%;
+    }
+  }
+}

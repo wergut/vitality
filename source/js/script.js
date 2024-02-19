@@ -8,6 +8,20 @@ var swiper = new Swiper(".testimonial-slider", {
     nextEl: ".testimonials-section .swiper-button-next",
     prevEl: ".testimonials-section .swiper-button-prev",
   },
+  breakpoints: {
+    320: {
+      slidesPerView: 1,
+      spaceBetween: 0,
+    },
+    601: {
+      slidesPerView: 2,
+      spaceBetween: 24,
+    },
+    1025: {
+      slidesPerView: 3,
+      spaceBetween: 30,
+    },
+  }
 });
 
 

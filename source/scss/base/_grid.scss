@@ -80,21 +80,19 @@
   }
 }
 
-@media (max-width: 1500px) {
-  .container {
-    max-width: 1440px;
-    padding: 0 150px
-  }
-}
-
-@media (max-width: 1350px) {
-  .container {
-    max-width: 1280px;
-    padding: 0 70px;
-  }
-}
 
 @media (max-width: 1023px) {
+  .container {
+    max-width: 959px;
+    padding: 0 42px;
+  }
+  .row {
+    margin: 0 -12px;
+    width: calc(100% + 24px);
+  }
+  [class*=col-] {
+    padding: 0 12px;
+  }
   .col-md-1 {
     width: 8.33333333%;
   }
@@ -130,10 +128,6 @@
   }
   .col-md-12 {
     width: 100%;
-  }
-  .container {
-    max-width: 670px;
-    padding: 0 15px;
   }
 }
 
