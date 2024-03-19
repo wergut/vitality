@@ -1,7 +1,7 @@
 <section class="section-article">
   <div class="container">
     <div class="row">
-      <div class="col-lg-8">
+      <div class="col-lg-8 col-md-12 col-m-12">
         <div class="title-block">
           <h2>HGH Therapy</h2>
         </div>
@@ -107,7 +107,7 @@
           </div>
         </div>
       </div>
-      <div class="col-lg-4">
+      <div class="col-lg-4 col-md-12 col-m-12">
         <div class="services-nav">
 
         </div>
@@ -115,3 +115,17 @@
     </div>
   </div>
 </section>
+
+
+<script>
+
+  document.addEventListener('DOMContentLoaded', function() {
+    var ul = document.querySelector('.section-article-content ul');
+    if (ul) {
+      var listItems = ul.querySelectorAll('.section-article-content ul li');
+      if (listItems.length > 6) {
+        ul.classList.add('wide-list');
+      }
+    }
+  });
+</script>

@@ -1,6 +1,17 @@
 .header {
   padding: 40px 0 30px;
 
+
+  .mobile-wrapper-hidden {
+    display: none;
+  }
+
+  .header-mobile-wrapper {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+  }
+
   ul {
     margin: 0;
   }
@@ -80,8 +91,12 @@
     }
   }
 
+  .mobile-header {
+    display: none;
+  }
 
-  .footer-contacts {
+
+  .header-contacts {
     display: flex;
     justify-content: flex-end;
 
@@ -123,23 +138,22 @@
   .header {
     padding: 40px 0 20px;
 
+    .mobile-wrapper-hidden {
+      display: inline-flex;
+      width: 30%;
+    }
+
     .header-logo-pc {
       display: none;
     }
-    .header-logo-tablet {
-      display: block;
-      padding-bottom: 20px;
-    }
 
     .header-logo-tablet {
-      display: inline-flex;
-      width: 25%;
-      margin-right: 0;
+      display: block;
     }
 
     .header-right {
       display: inline-flex;
-      width: 75%;
+      width: 70%;
       padding-bottom: 20px;
 
       nav {
@@ -175,7 +189,7 @@
       }
     }
 
-    .footer-contacts {
+    .header-contacts {
       flex-wrap: wrap;
 
       .header-mail {
@@ -185,4 +199,164 @@
     }
 
   }
+}
+
+@media (max-width: 600px) {
+  .header {
+    padding: 20px 0;
+
+    a {
+      font-size: 24px;
+    }
+
+    .mobile-header {
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+      align-items: center;
+
+      .btn-menu-mobile {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50px;
+        border-radius: 50%;
+        height: 50px;
+        border: 1px solid #94AFB636;
+        box-shadow: 1px 2px 5.800000190734863px 0 #94AFB636;
+        flex-wrap: wrap;
+        padding: 17px 14px;
+        transition: 0.3s;
+        .line {
+          height: 2px;
+          width: 100%;
+          transition: 0.3s;
+          background-color: $--color-blue-light;
+
+          &:nth-of-type(2) {
+            margin: 4px 0;
+          }
+        }
+      }
+    }
+
+    .header-logo img {
+      max-width: 152px;
+      width: 100%;
+      min-width: 152px;
+    }
+
+    .mobile-wrapper-hidden {
+      display: none;
+    }
+
+    .header-mobile-wrapper {
+      opacity: 0;
+      visibility: hidden;
+      transition: 0.5s;
+      margin-left: -200%;
+      position: absolute;
+      left: 0;
+      top: 90px;
+      padding: 0 24px;
+      z-index: 99;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      background-color: $--color-white;
+    }
+
+    .header-mobile-wrapper.show {
+      opacity: 1;
+      visibility: visible;
+      margin-left: 0;
+    }
+
+
+    .header-left {
+      order: 0;
+      border-top: 0;
+      width: 100%;
+      padding-top: 34px;
+      padding-bottom: 40px;
+      margin-bottom: 40px;
+      border-bottom: 1px solid $--color-blue-light;
+
+      nav ul li {
+        width: 100%;
+
+        &:not(:last-of-type) {
+          margin-bottom: 20px;
+        }
+
+        &:nth-of-type(3) {
+          padding-left: 0;
+        }
+
+        &:nth-of-type(1), &:nth-of-type(2) {
+          margin-bottom: 20px;
+        }
+      }
+    }
+
+    .header-contacts {
+      justify-content: flex-start;
+      max-width: 75%;
+
+      a {
+         font-weight: 500;
+
+        &:before {
+          width: 24px;
+          height: 24px;
+        }
+      }
+    }
+
+    .header-right {
+      width: 100%;
+      flex-wrap: wrap;
+
+      nav {
+        margin-bottom: 55px;
+        justify-content: flex-start;
+
+        ul {
+          justify-content: flex-start;
+
+          li {
+            width: 100%;
+            display: block;
+            text-align: left;
+
+            &:not(:last-of-type) {
+              margin-bottom: 20px;
+            }
+          }
+
+          li + li {
+            margin-left: 0;
+          }
+        }
+      }
+    }
+
+  }
+
+
+
+
+
+  .btn-menu-mobile.cross .line:nth-child(1) {
+    transform: translateY(6px) rotate(45deg);
+  }
+
+  .btn-menu-mobile.cross .line:nth-child(2) {
+    opacity: 0;
+  }
+
+  .btn-menu-mobile.cross .line:nth-child(3) {
+    transform: translateY(-6px) rotate(-45deg);
+  }
+
 }

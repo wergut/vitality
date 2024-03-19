@@ -19,52 +19,66 @@
 
 <header class="header">
   <div class="container">
-    <div class="header-logo header-logo-tablet">
-      <img src="./img/header-logo.svg" alt="">
-    </div>
-    <div class="header-left">
-      <div class="header-logo header-logo-pc">
+    <div class="mobile-header">
+      <a href="/" class="header-logo header-logo-tablet">
         <img src="./img/header-logo.svg" alt="">
+      </a>
+      <div class="btn-menu-mobile">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
       </div>
-      <nav>
-            <ul>
-              <li>
-                <a href="#">HGH Therapy</a>
-              </li>
-              <li>
-                <a href="#">Sexual Health</a>
-              </li>
-              <li>
-                <a href="#">Weight Loss</a>
-              </li>
-              <li>
-                <a href="#">Peptide Therapy</a>
-              </li>
-              <li>
-                <a href="#">Testosterone Therapy</a>
-              </li>
-            </ul>
-          </nav>
     </div>
-    <div class="header-right">
-          <nav>
-            <ul>
-              <li>
-                <a href="#">Location</a>
-              </li>
-              <li>
-                <a href="#">Blog</a>
-              </li>
-              <li>
-                <a href="#">Contact us</a>
-              </li>
-            </ul>
-          </nav>
-          <div class="footer-contacts">
-            <a class="header-mail" href="#">mail@site.com</a>
-            <a class="header-phone" href="#">1 500 956 1236</a>
-          </div>
+    <div class="header-mobile-wrapper">
+      <div class="mobile-wrapper-hidden">
+        <a href="/" class="header-logo header-logo-tablet">
+          <img src="./img/header-logo.svg" alt="">
+        </a>
+      </div>
+      <div class="header-left">
+        <div class="header-logo header-logo-pc">
+          <img src="./img/header-logo.svg" alt="">
         </div>
+        <nav>
+          <ul>
+            <li>
+              <a href="#">HGH Therapy</a>
+            </li>
+            <li>
+              <a href="#">Sexual Health</a>
+            </li>
+            <li>
+              <a href="#">Weight Loss</a>
+            </li>
+            <li>
+              <a href="#">Peptide Therapy</a>
+            </li>
+            <li>
+              <a href="#">Testosterone Therapy</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="header-right">
+        <nav>
+          <ul>
+            <li>
+              <a href="#">Location</a>
+            </li>
+            <li>
+              <a href="#">Blog</a>
+            </li>
+            <li>
+              <a href="#">Contact us</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="header-contacts">
+          <a class="header-mail" href="#">mail@site.com</a>
+          <a class="header-phone" href="#">1 500 956 1236</a>
+        </div>
+      </div>
+    </div>
   </div>
 </header>
 <main>
@@ -82,7 +96,7 @@
 <section class="section-article">
   <div class="container">
     <div class="row">
-      <div class="col-lg-8">
+      <div class="col-lg-8 col-md-12 col-m-12">
         <div class="title-block">
           <h2>HGH Therapy</h2>
         </div>
@@ -188,7 +202,7 @@
           </div>
         </div>
       </div>
-      <div class="col-lg-4">
+      <div class="col-lg-4 col-md-12 col-m-12">
         <div class="services-nav">
 
         </div>
@@ -196,6 +210,20 @@
     </div>
   </div>
 </section>
+
+
+<script>
+
+  document.addEventListener('DOMContentLoaded', function() {
+    var ul = document.querySelector('.section-article-content ul');
+    if (ul) {
+      var listItems = ul.querySelectorAll('.section-article-content ul li');
+      if (listItems.length > 6) {
+        ul.classList.add('wide-list');
+      }
+    }
+  });
+</script>
 
 
 

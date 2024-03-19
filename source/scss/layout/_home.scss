@@ -18,7 +18,6 @@
       p {
         font-size: 24px;
         font-weight: 500;
-        line-height: 29px;
       }
     }
 
@@ -107,5 +106,56 @@
       }
     }
 
+  }
+}
+
+@media (max-width: 600px) {
+  .main-banner {
+    padding-top: 28px;
+    padding-bottom: 150px;
+    margin-bottom: 0;
+    .banner-title-block {
+      padding-top: 0;
+
+      .banner-description  {
+
+        p {
+          font-size: 20px;
+        }
+      }
+    }
+    .h1 {
+      margin-bottom: 10px;
+    }
+    .btn {
+      display: none;
+    }
+    .banner-image  {
+      margin-top: 0;
+
+      &:before {
+        left: 10%;
+        border-radius: 330px 0 0 283px;
+        height: 336px;
+        top: 0;
+      }
+
+      img {
+        height: 337px;
+        width: initial;
+        left: unset;
+        right: -20%;
+        border-radius: 0;
+      }
+    }
+    .review-card {
+      left: 0;
+      max-width: 263px;
+      top: 65%;
+
+      p {
+        font-size: 14px;
+      }
+    }
   }
 }

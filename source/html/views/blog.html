@@ -5,8 +5,11 @@
 
 <section class="blog">
   <div class="container">
+    <div class="title-block">
+      <div class="h2">Blog</div>
+    </div>
     <div class="row">
-      <div class="col-lg-4">
+      <div class="col-lg-4 col-md-6 col-m-12">
         <article class="blog-card">
           <div class="card-top">
             <div class="card-image">
@@ -22,7 +25,7 @@
           </div>
         </article>
       </div>
-      <div class="col-lg-4">
+      <div class="col-lg-4 col-md-6 col-m-12">
         <article class="blog-card">
           <div class="card-top">
             <div class="card-image">
@@ -38,7 +41,7 @@
           </div>
         </article>
       </div>
-      <div class="col-lg-4">
+      <div class="col-lg-4 col-md-6 col-m-12">
         <article class="blog-card">
           <div class="card-top">
             <div class="card-image">
@@ -54,7 +57,7 @@
           </div>
         </article>
       </div>
-      <div class="col-lg-4">
+      <div class="col-lg-4 col-md-6 col-m-12">
         <article class="blog-card">
           <div class="card-top">
             <div class="card-image">
@@ -70,7 +73,7 @@
           </div>
         </article>
       </div>
-      <div class="col-lg-4">
+      <div class="col-lg-4 col-md-6 col-m-12">
         <article class="blog-card">
           <div class="card-top">
             <div class="card-image">
@@ -86,7 +89,7 @@
           </div>
         </article>
       </div>
-      <div class="col-lg-4">
+      <div class="col-lg-4 col-md-6 col-m-12">
         <article class="blog-card">
           <div class="card-top">
             <div class="card-image">
@@ -102,23 +105,7 @@
           </div>
         </article>
       </div>
-      <div class="col-lg-4">
-        <article class="blog-card">
-          <div class="card-top">
-            <div class="card-image">
-              <img src="./img/blog-card-img.png" alt="">
-            </div>
-            <a href="#" class="h5">Benefits of Testosterone</a>
-          </div>
-          <div class="card-bottom">
-            <div class="card-description">
-              <p>Testosterone is an important part of our health and an essential hormone for masculine characteristics. Unfortunately, as we age levels of testosterone drop each year affecting your muscle mass, mood, sex drive, and more.</p>
-            </div>
-            <a href="#" class="link-blue">Read more</a>
-          </div>
-        </article>
-      </div>
-      <div class="col-lg-4">
+      <div class="col-lg-4 col-md-6 col-m-12">
         <article class="blog-card">
           <div class="card-top">
             <div class="card-image">
@@ -136,12 +123,14 @@
       </div>
     </div>
     <div class="row">
-      <div class="col-lg-12">
+      <div class="col-lg-12 col-md-12 col-m-12">
         <button class="btn btn-blue">More</button>
       </div>
     </div>
   </div>
 </section>
+
+<%= _.template(require('../includes/callback.html').default)({}) %>
 
 <!--footer.html-->
 <%= _.template(require('../includes/common/footer.html').default)({}) %>

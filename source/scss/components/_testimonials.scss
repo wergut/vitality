@@ -45,14 +45,6 @@
 }
 
 
-
-
-
-
-
-
-
-
 .testimonial-slider {
   max-width: 100%;
   position: relative;
@@ -76,7 +68,7 @@
   .testimonials-section {
     position: relative;
     padding-bottom: 70px;
-    margin-bottom: 80px;
+    margin-bottom: 150px;
 
     .container {
       position: relative;
@@ -102,6 +94,26 @@
 
     .swiper-button-prev {
       left: 42px;
+    }
+  }
+}
+
+
+@media (max-width: 600px) {
+  .testimonials-section {
+
+    .title-block {
+      padding-top: 0;
+    }
+
+    &:after {
+      display: none;
+    }
+    .swiper-button-prev {
+      left: 24px;
+    }
+    .swiper-button-next {
+      right: 24px;
     }
   }
 }

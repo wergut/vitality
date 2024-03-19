@@ -77,3 +77,36 @@
     }
   }
 }
+
+
+@media (max-width: 600px) {
+  .how-work {
+
+    .col-m-12:last-of-type .work-item {
+      margin-bottom: 0;
+    }
+    .work-item {
+      .work-ico {
+        float: unset;
+        display: inline-block;
+
+        img {
+          width: 50px;
+          height: 50px;
+        }
+      }
+      .work-content {
+        padding: 30px 20px 0;
+      }
+      .h5 {
+        display: inline-block;
+        width: 70%;
+        margin-bottom: 20px;
+      }
+      .btn {
+        max-width: calc(100% - 40px);
+        margin: 30px 20px 30px;
+      }
+    }
+  }
+}

@@ -1,11 +1,14 @@
 .section-content-image {
 
   .content-image {
+    position: relative;
 
     img {
-      height: 599px;
       object-fit: cover;
     }
+  }
+  .content-image-mobile {
+    display: none;
   }
   .content {
 
@@ -16,12 +19,67 @@
 }
 
 @media (max-width: 1023px) {
-  .section-content-image {
 
-    .content-image {
-      img {
-          height: 482px;
+}
+
+@media (max-width: 600px) {
+  .section-content-image {
+    overflow: hidden;
+    position: relative;
+
+    .h2-pc {
+      display: none;
+    }
+
+    .link-blue {
+      max-width: 100%;
+      width: 100%;
+      height: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 15px;
+      font-weight: 600;
+      line-height: 18px;
+      letter-spacing: 0.0125em;
+      border-radius: 50px;
+      transition: 0.3s;
+      background: $--color-blue-light;
+      color: $--color-white;
+
+      &:hover {
+        background: $--color-blue;
       }
     }
+  }
+  .content-image-pc {
+    display: none;
+  }
+  .section-content-image .content-image-mobile {
+    display: block;
+    margin-bottom: 30px;
+    position: relative;
+
+    .h2-mobile {
+      position: absolute;
+      top: 60%;
+      z-index: 1;
+      right: 0;
+      font-size: 30px;
+      font-weight: 600;
+      margin-bottom: 0;
+      color: $--color-blue;
+    }
+
+    img {
+      object-fit: cover;
+      position: relative;
+      width: calc(100% + 40px);
+      max-width: initial;
+      left: -20px;
+    }
+  }
+  .section-content-image .content .content-description {
+    margin-bottom: 30px;
   }
 }

@@ -18,3 +18,20 @@
     }
   }
 }
+
+
+@media (max-width: 1023px) {
+  .services {
+    .service-card {
+      margin-bottom: 24px;
+    }
+  }
+}
+
+@media (max-width: 1023px) {
+  .services {
+    .service-card {
+      height: 313px;
+    }
+  }
+}

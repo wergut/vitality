@@ -13,7 +13,6 @@
 
     h5 {
       margin: 50px 0 10px;
-      line-height: 29px;
     }
 
     img {
@@ -78,5 +77,32 @@
     .title-block {
       text-align: start;
     }
+  }
+}
+
+
+@media (max-width: 1023px) {
+  .section-article h2 {
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 600px) {
+  .section-article {
+    .section-article-content {
+      table {
+        margin-top: 10px;
+      }
+      h3 {
+        margin-bottom: 10px;
+        font-size: 28px;
+      }
+      h5 {
+        font-size: 24px;
+      }
+    }
+  }
+  .section-article .section-article-content ul.wide-list li {
+    width: 100%;
   }
 }
